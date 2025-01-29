@@ -152,7 +152,7 @@ function InfoBarUpdate() {
 
 function getQuality(pnt) {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', "https://res.anti3z.ru/rescalc" + "?type=point" +
+        xhr.open('GET', "https://resgamemap.vercel.app/rescalc" + "?type=point" +
                         "&lng=" + pnt.lng.toFixed(6) + "&lat=" + pnt.lat.toFixed(6) +
                         "&resID=" + selectedResID, false);
         xhr.send();
@@ -221,7 +221,7 @@ function ScanClick_handler () {
         var canvasH = document.getElementById('map_canvas').offsetHeight;
         var mapBoundsNE = map.getBounds().getNorthEast();
         var mapBoundsSW = map.getBounds().getSouthWest();
-        var srcImage = "https://res.anti3z.ru/rescalc" + "?type=map" +
+        var srcImage = "https://resgamemap.vercel.app/rescalc" + "?type=map" +
                       "&width=" + canvasW + "&height=" + canvasH +
                       "&north=" + mapBoundsNE.lat.toFixed(6) +
                       "&south=" + mapBoundsSW.lat.toFixed(6) +
@@ -373,7 +373,7 @@ function AutoPlaceClick_handler () {
         var mapBoundsSW = map.getBounds().getSouthWest();
         var minQual = document.getElementById("qual_slider").value / 100.0;
 
-        xhr.open('GET', "https://res.anti3z.ru/rescalc" + "?type=array" +
+        xhr.open('GET', "https://resgamemap.vercel.app/rescalc" + "?type=array" +
                   "&north=" + mapBoundsNE.lat.toFixed(6) +
                   "&south=" + mapBoundsSW.lat.toFixed(6) +
                   "&west=" + mapBoundsSW.lng.toFixed(6) +
