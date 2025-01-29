@@ -1,7 +1,7 @@
 # ResGameMap
 Resource-Game Map Frontend
 
-Основной адрес рабочего варианта: https://res.anti3z.ru
+Основной адрес рабочего варианта: https://resgamemap.vercel.app/
 
 
 # TODO
